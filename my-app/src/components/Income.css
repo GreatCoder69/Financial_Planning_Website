@@ -1,0 +1,97 @@
+/* Global resets for this component */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Main container styling */
+.income-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: (100vh - 60vh); /* Take full height */
+    box-sizing: border-box; /* Include padding in height calculations */
+}
+
+/* Section for income inputs */
+.income-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px; /* Reduced padding */
+    width: 100%;
+    max-width: 600px; /* Narrower container */
+    height: 100%; /* Ensure full container height */
+    box-sizing: border-box;
+}
+
+/* Group styling for monthly and yearly income */
+.income-group {
+    margin-bottom: 8px; /* Reduced spacing */
+}
+
+/* Headings for income groups */
+.income-heading {
+    font-size: 1em; /* Smaller font size */
+    margin-bottom: 12px; /* Reduced spacing */
+    text-align: center;
+    color: #333;
+}
+
+/* Grid layout for inputs and totals */
+.income-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 10px; /* Reduced gaps */
+    align-items: center;
+    margin-bottom: 12px; /* Reduced margin */
+}
+
+/* Labels for income inputs */
+.income-label {
+    font-weight: bold;
+    text-align: left; /* Adjusted alignment */
+    font-size: 0.9em; /* Slightly smaller font */
+    color: #555;
+}
+
+/* Input boxes for income values */
+.income-input-box {
+    padding: 4px; /* Further reduced padding */
+    font-size: 0.9em; /* Smaller font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: right;
+    background: #f9f9f9;
+}
+
+/* Read-only total input boxes */
+.income-total-box {
+    background-color: #e9ecef;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Total yearly income section */
+.income-total-yearly-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0; /* Reduced padding */
+    border-top: 1px solid #ccc;
+    margin-top: 12px; /* Reduced margin */
+}
+
+.income-total-yearly-container .income-label {
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+.income-total-yearly-container .income-total-box {
+    font-size: 0.9em; /* Slightly smaller font size */
+    background-color: #dfe6e9;
+    color: #2d3436;
+}

@@ -1,0 +1,156 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.app {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #4A90E2;
+    text-align: center;
+}
+
+/* Containers */
+.container {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fefefe;
+}
+
+.container:last-child {
+    margin-bottom: 0;
+}
+
+/* Grid styling */
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.grid:last-child {
+    margin-bottom: 0;
+}
+
+/* Input fields */
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Labels and text */
+label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Placeholder elements */
+.placeholder {
+    font-size: 0.85rem;
+    color: #888;
+    text-align: center;
+}
+
+/* Status indicators */
+span.bad {
+    color: #d9534f; /* Red */
+    font-weight: bold;
+}
+
+span.good {
+    color: #5cb85c; /* Green */
+    font-weight: bold;
+}
+
+/* Button styling (if needed later) */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+}
+
+/* Container 3 Specific Styling */
+.container-3 .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: auto auto auto; /* 3 rows */
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f9fc; /* Light background for distinction */
+}
+
+/* Cells in the grid */
+.container-3 .grid > div {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Highlight headers in container 3 grid */
+.container-3 .grid > div:first-child {
+    font-weight: bold;
+    background-color: #e6f3ff; /* Light blue header color */
+    color: #333;
+    border: none;
+}

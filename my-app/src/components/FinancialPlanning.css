@@ -1,0 +1,63 @@
+.grid-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.grid-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 5px;
+    min-height: 40px;
+    text-align: center;
+}
+
+.grid-cell input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.grid-cell span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.grid-cell input:focus {
+    outline: none;
+    border: 1px solid #aaa;
+}
+
+.grid-container-full {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* Adjust for 8 columns */
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container-full div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    margin-right: 15px;
+}
